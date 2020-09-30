@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cupcakes</title>
+		<link
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="display-3">Cupcakes</h1>
+			<div class="row justify-content-start" id="cupcakes-list"></div>
+			<hr class="hr" />
+			<div class="row justify-content-center">
+				<div class="col col-6">
+					<h2 class="display-4">Create a Cupcake!</h2>
+					<form class="form" action="" id="create-cupcake-form">
+						<label for="flavor">Flavor</label>
+						<input
+							class="form-control"
+							type="text"
+							name="flavor"
+							id="form-flavor"
+						/>
+						<label for="size">Size</label>
+						<input
+							class="form-control"
+							type="text"
+							name="size"
+							id="form-size"
+						/>
+						<label for="rating">Rating</label>
+						<input
+							class="form-control"
+							type="number"
+							min="0"
+							name="rating"
+							id="form-rating"
+						/>
+						<label for="image">Image URL</label>
+						<input
+							class="form-control"
+							type="text"
+							name="image"
+							id="form-image"
+						/>
+						<button class="btn btn-primary my-3" id="submit">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script src="https://unpkg.com/jquery"></script>
+		<script src="https://unpkg.com/axios/dist/axios.js"></script>
+		<script src="/static/cupcakes.js"></script>
+	</body>
+</html>
